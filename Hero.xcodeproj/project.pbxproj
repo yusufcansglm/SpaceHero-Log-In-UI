@@ -11,6 +11,10 @@
 		732482C62AC4AC1100A0F6DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732482C52AC4AC1100A0F6DD /* ContentView.swift */; };
 		732482C82AC4AC1200A0F6DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 732482C72AC4AC1200A0F6DD /* Assets.xcassets */; };
 		732482CB2AC4AC1200A0F6DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 732482CA2AC4AC1200A0F6DD /* Preview Assets.xcassets */; };
+		732482D32AC4ACD900A0F6DD /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 732482D22AC4ACD900A0F6DD /* RiveRuntime */; };
+		732482D52AC4AD2700A0F6DD /* hero.riv in Resources */ = {isa = PBXBuildFile; fileRef = 732482D42AC4AD2700A0F6DD /* hero.riv */; };
+		732482D72AC4AEF500A0F6DD /* GalaxyOfStars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732482D62AC4AEF500A0F6DD /* GalaxyOfStars.swift */; };
+		732482D92AC4AF2700A0F6DD /* SparklingStar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732482D82AC4AF2700A0F6DD /* SparklingStar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,9 @@
 		732482C52AC4AC1100A0F6DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		732482C72AC4AC1200A0F6DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		732482CA2AC4AC1200A0F6DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		732482D42AC4AD2700A0F6DD /* hero.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = hero.riv; sourceTree = "<group>"; };
+		732482D62AC4AEF500A0F6DD /* GalaxyOfStars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalaxyOfStars.swift; sourceTree = "<group>"; };
+		732482D82AC4AF2700A0F6DD /* SparklingStar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparklingStar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				732482D32AC4ACD900A0F6DD /* RiveRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +61,10 @@
 			children = (
 				732482C32AC4AC1100A0F6DD /* HeroApp.swift */,
 				732482C52AC4AC1100A0F6DD /* ContentView.swift */,
+				732482D62AC4AEF500A0F6DD /* GalaxyOfStars.swift */,
+				732482D82AC4AF2700A0F6DD /* SparklingStar.swift */,
 				732482C72AC4AC1200A0F6DD /* Assets.xcassets */,
+				732482D42AC4AD2700A0F6DD /* hero.riv */,
 				732482C92AC4AC1200A0F6DD /* Preview Content */,
 			);
 			path = Hero;
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = Hero;
+			packageProductDependencies = (
+				732482D22AC4ACD900A0F6DD /* RiveRuntime */,
+			);
 			productName = Hero;
 			productReference = 732482C02AC4AC1100A0F6DD /* Hero.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 732482B72AC4AC1000A0F6DD;
+			packageReferences = (
+				732482D12AC4ACD900A0F6DD /* XCRemoteSwiftPackageReference "rive-ios" */,
+			);
 			productRefGroup = 732482C12AC4AC1100A0F6DD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				732482CB2AC4AC1200A0F6DD /* Preview Assets.xcassets in Resources */,
+				732482D52AC4AD2700A0F6DD /* hero.riv in Resources */,
 				732482C82AC4AC1200A0F6DD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				732482D72AC4AEF500A0F6DD /* GalaxyOfStars.swift in Sources */,
 				732482C62AC4AC1100A0F6DD /* ContentView.swift in Sources */,
 				732482C42AC4AC1100A0F6DD /* HeroApp.swift in Sources */,
+				732482D92AC4AF2700A0F6DD /* SparklingStar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +357,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		732482D12AC4ACD900A0F6DD /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rive-app/rive-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		732482D22AC4ACD900A0F6DD /* RiveRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 732482D12AC4ACD900A0F6DD /* XCRemoteSwiftPackageReference "rive-ios" */;
+			productName = RiveRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 732482B82AC4AC1000A0F6DD /* Project object */;
 }
