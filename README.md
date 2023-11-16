@@ -3,7 +3,15 @@ Animated Log in UI with Rive
 
 
 
-Uploading Simulator Screen Recording - iPhone 15 Pro - 2023-10-02 at 23.00.07.mp4…
+
+
+
+
+
+
+
+https://github.com/yusufcansglm/SpaceHero-Log-In-UI/assets/135333933/f5248ef7-211d-4214-ae41-d43426058ada
+
 
 
 
